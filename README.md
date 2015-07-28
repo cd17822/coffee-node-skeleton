@@ -7,9 +7,8 @@ Open and agree to terms
 Install Homebrew:
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”
 
-Download SublimeText:
-OS X
-http://www.sublimetext.com/3
+Download SublimeText 3:
+http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203083.dmg
 
 Install Sublime Package Control:
 ctrl+`
@@ -38,21 +37,17 @@ Install nodemon:
 npm install -g nodemon
 
 Set up skeleton:
-git clone __
-npm install
+git clone this repository
+npm install in repo directory
 Terminal Tabs: mongod, nodemon app.coffee
 
 Testing:
 mongo
-show dbs
-use project (use the database name “project”)
-show collections (collections of data within database)
-db.users.find() (find all users in the database)
+- show dbs
+- "use project" (use the database name “project”)
+- "show collections" (collections of data within database)
+- "db.users.find()" (find all users in the database)
 postman
-in chrome: https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en
-view
-http://localhost:3005 (assuming PORT is 3005)
-
-
-
-
+- in chrome: https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en
+view content in browser
+- http://localhost:3005 (assuming PORT is 3005)
