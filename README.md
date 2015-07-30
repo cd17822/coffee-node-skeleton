@@ -1,61 +1,82 @@
 # coffee-node-skeleton
-Set yourself up right.
+## Set yourself up right.
+<br>
 
-<strong>Install Xcode:</strong></br>
-Open and agree to terms
+### Set Up
 
-<strong>Install Homebrew:</strong></br>
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”
+Clone repository: `git clone https://github.com/cd17822/coffee-node-skeleton.git`
 
-<strong>Download SublimeText 3:</strong></br>
-http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203083.dmg
+Change into repo directory: `cd coffee-node-skeleton`
 
-<strong>Install Sublime Package Control:</strong></br>
-ctrl+`<br>
+Install modules: `npm install`
+
+Terminal should be running (each its own window): `mongod` `nodemon app.coffee`
+
+Not working? See below if there are additional configurations you've yet to set up.
+
+### The Basics
+
+**Install Xcode:**<br>
+Open and Agree to Terms
+
+**Install Homebrew:**</br>
+`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”`
+
+**Install npm:**</br>
+`brew install npm`
+
+**Install mongodb:**</br>
+`brew install mongodb`<br>
+`sudo mkdir /data`<br>
+`sudo mkdir /data/db`<br>
+```sudo chown -R `id -u` /data/db```
+
+**Install nodemon:**<br>
+`npm install -g nodemon`
+
+### Editing
+
+**Download SublimeText 3:**</br>
+<http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203083.dmg>
+
+**Install Sublime Package Control:**
+
+Open Python Console: **ctrl+`**
+
 Type into python console:<br>
 ```python
 import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 ```
 
-<strong>Install Better Coffeescript:</strong></br>
-cmd+shift P<br>
-Package Control:<br>
-"Install Package"<br>
-“Better Coffeescript”<br>
+**Install Better Coffeescript:**</br>
+cmd+shift+P<br>
+_Package Control: Install Package_<br>
+_Better Coffeescript_<br>
 
-<strong>Install Jade:</strong></br>
-cmd+shift P<br>
-Package Control: Install Package<br>
-“Jade"<br>
+**Install Jade:**</br>
+cmd+shift+P<br>
+_Package Control: Install Package_<br>
+_Jade_<br>
 
-<strong>Install npm:</strong></br>
-brew install npm<br>
 
-<strong>Install mongodb:</strong></br>
-```
-brew install mongodb<br>
-sudo mkdir /data<br>
-sudo mkdir /data/db<br>
-sudo chown -R `id -u` /data/db<br>
-```
 
-<strong>Install nodemon:</strong><br>
-npm install -g nodemon<br>
+###Testing
 
-<strong>Set up skeleton:</strong></br>
-git clone https://github.com/cd17822/coffee-node-skeleton.git<br>
-npm install in repo directory<br>
-Terminal Tabs: mongod, nodemon app.coffee<br>
+**View content in browser**<br>
+Assuming port is 3005: <http://localhost:3005>
 
-<strong>Testing:</strong></br>
-Use Mongo
-- show dbs
-- "use project" (use the database name “project”)
-- "show collections" (collections of data within database)
-- "db.users.find()" (find all users in the database)
+**Use Postman to test API Calls**<br>
+Download in chrome: <https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en>
 
-Download Postman
-- in chrome: https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en
+**Sift through MongoDB**
 
-View content in browser
-- http://localhost:3005 (assuming PORT is 3005)
+- Begin mongo shell: `mongo`
+- Show databases in your system: `show dbs`
+- Use database "project": `use project`
+- Show collections in project `show collections`
+- Find all users in current database: `db.users.find()`
+
+
+
+
+
