@@ -13,13 +13,15 @@ mongoose.connect configs.MONGO_URI
 
 # configure server
 app.disable 'x-powered-by'
-app.use '/public', express.static 'public'
 app.use bodyParser.urlencoded extended: yes
 app.use bodyParser.json()
 
+# serve static assets
+app.use '/public', express.static 'public'
+
 # use jade templating engine
 app.set 'view engine', 'jade'
-app.set 'views', './views'
+app.set 'views', 'views'
 
 # configure routes
 app.use '/', indexRouter
@@ -27,12 +29,8 @@ app.use '/users', userRouter
 
 # configure error handling
 app.use (err, req, res, next) ->
-  if err.name is 'ValidationError'
-    params = (param: param, message: info.message for param, info of err.errors)
-    server.sendError res, 400, 'invalid_params', 'Invalid request.', params
-  else
-    res.sendStatus 500
-    console.log err
+  res.sendStatus 500
+  console.log err
 
 # start server
 PORT = 3005
