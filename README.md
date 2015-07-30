@@ -75,8 +75,3 @@ Download in chrome: <https://chrome.google.com/webstore/detail/postman/fhbjgbifl
 - Use database "project": `use project`
 - Show collections in project `show collections`
 - Find all users in current database: `db.users.find()`
-
-
-
-
-
