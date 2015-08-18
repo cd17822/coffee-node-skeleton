@@ -31,6 +31,9 @@ Open and Agree to Terms
 `sudo mkdir /data/db`<br>
 ```sudo chown -R `id -u` /data/db```
 
+**Install coffee-script:**<br>
+`npm install -g coffee-script`
+
 **Install nodemon:**<br>
 `npm install -g nodemon`
 
