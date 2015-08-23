@@ -15,6 +15,6 @@ router.use (req,res,next) ->
 ###
 
 router.get '/', (req, res, next) ->
-  res.render 'user', title: 'project'
+  res.render 'index', title: 'project'
 
 module.exports = router
