@@ -1,5 +1,5 @@
 # coffee-node-skeleton
-## Set yourself up right.
+### Set yourself up right.
 <br>
 
 ### Set Up

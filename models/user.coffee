@@ -12,13 +12,12 @@ schema = mongoose.Schema
   password: String
 
 schema.set 'toJSON', transform: (doc, ret, options) ->
-  _.pick doc, 'id', 'first_name', 'last_name', 'email', 'phone'
+  _.pick doc, 'id', 'first_name', 'last_name', 'email', 'phone', 'created_at'
 
 schema.pre 'save', (next) ->
   #hash password
-  if @isModified('password')
-  then @password = bcrypt.hashSync @password, (bcrypt.genSaltSync 10)
-  next();
+  if @isModified 'password' then @password = bcrypt.hashSync @password, bcrypt.genSaltSync 10
+  next()
 
 schema.plugin idValidator, message : 'Invalid {PATH}.'
 schema.plugin timestamps, createdAt: 'created_at', updatedAt: 'updated_at'
