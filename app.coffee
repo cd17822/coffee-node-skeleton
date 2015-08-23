@@ -34,8 +34,8 @@ app.use (err, req, res, next) ->
     server.sendError res, 400, 'invalid_params', 'Invalid request.', params
   else
     res.sendStatus 500
-    console.log err
+    console.error err
 
 # start server
 PORT = 3005
-app.listen PORT, -> console.log "Listening on #{PORT}"
+app.listen PORT, -> console.log 'Listening on #{PORT}'
