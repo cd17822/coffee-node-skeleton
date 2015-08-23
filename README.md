@@ -2,7 +2,8 @@
 ### Set yourself up right.
 
 
-
+<br>
+<br>
 ### Set Up
 
 Clone repository: `git clone https://github.com/cd17822/coffee-node-skeleton.git`
@@ -55,6 +56,7 @@ Open and Agree to Terms
 **Install nodemon:**
 
 `npm install -g nodemon`
+
 <br>
 <br>
 ### Editing
