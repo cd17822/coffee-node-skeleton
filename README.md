@@ -18,7 +18,6 @@ Not working? See below if there are additional configurations you've yet to set 
 <br>
 <br>
 ### The Basics
-
 **Install Xcode:**
 
 Open and Agree to Terms
@@ -59,7 +58,6 @@ Open and Agree to Terms
 <br>
 <br>
 ### Editing
-
 **Download SublimeText 3:**
 
 
@@ -100,7 +98,6 @@ _Jade_
 <br>
 <br>
 ###Testing
-
 **View content in browser**
 
 Assuming port is 3005: <http://localhost:3005>
