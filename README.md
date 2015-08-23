@@ -15,9 +15,10 @@ Terminal should be running (each its own window): `mongod` `nodemon app.coffee`
 
 Not working? See below if there are additional configurations you've yet to set up.
 
+<br>
+<br>
 ### The Basics
 
-<br>
 **Install Xcode:**
 
 Open and Agree to Terms
@@ -55,10 +56,10 @@ Open and Agree to Terms
 **Install nodemon:**
 
 `npm install -g nodemon`
-
+<br>
+<br>
 ### Editing
 
-<br>
 **Download SublimeText 3:**
 
 
@@ -96,12 +97,10 @@ _Package Control: Install Package_
 
 _Jade_
 
-
-
-
+<br>
+<br>
 ###Testing
 
-<br>
 **View content in browser**
 
 Assuming port is 3005: <http://localhost:3005>
