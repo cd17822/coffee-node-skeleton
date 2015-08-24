@@ -1,6 +1,6 @@
 express = require 'express'
 app = express()
-mongoose = require('mongoose')
+mongoose = require 'mongoose'
 bodyParser = require 'body-parser'
 rek = require 'rekuire'
 indexRouter = rek 'routes/index'
@@ -38,4 +38,4 @@ app.use (err, req, res, next) ->
 
 # start server
 PORT = 3005
-app.listen PORT, -> console.log 'Listening on #{PORT}'
+app.listen PORT, -> console.log "Listening on #{PORT}"
